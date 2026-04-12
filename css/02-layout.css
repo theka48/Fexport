@@ -1,0 +1,175 @@
+/* NỘI DUNG MỚI CỦA FILE: 02-layout.css */
+
+.app-layout {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* --- THAY ĐỔI: Bo góc cửa sổ chính --- */
+    border-radius: var(--md-radius-lg);
+    border: 1px solid var(--glass-outline);
+    box-shadow: var(--md-shadow-3);
+}
+
+.sidebar {
+    width: 48px;
+    min-width: 48px;
+    /* --- THAY ĐỔI: Áp dụng hiệu ứng kính --- */
+    background: var(--glass-surface-sidebar);
+    backdrop-filter: blur(var(--glass-blur));
+    border-right: 1px solid var(--glass-outline);
+    /* ------------------------------------- */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+    gap: 4px;
+    z-index: 400;
+    flex-shrink: 0;
+}
+
+.sidebar-tab {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--md-radius-md);
+    cursor: pointer;
+    color: var(--md-on-surface-3);
+    position: relative
+}
+
+.sidebar-tab:hover {
+    background: var(--md-primary-light);
+    color: var(--md-primary)
+}
+
+.sidebar-tab.active {
+    background: var(--md-primary-light);
+    color: var(--md-primary)
+}
+
+.sidebar-tab.active::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 8px;
+    bottom: 8px;
+    width: 3px;
+    background: var(--md-primary);
+    border-radius: 0 2px 2px 0
+}
+
+.sidebar-tab::after {
+    content: attr(title);
+    position: absolute;
+    left: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--md-on-surface);
+    color: var(--md-surface);
+    padding: 4px 10px;
+    border-radius: var(--md-radius-sm);
+    font-size: 11.5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999
+}
+
+.sidebar-tab:hover::after {
+    opacity: 1
+}
+
+.app-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-width: 0;
+    /* --- THAY ĐỔI: Nền chính của vùng nội dung --- */
+    background: var(--md-surface-2);
+}
+
+.tab-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    height: 100%
+}
+
+.split-area {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    min-height: 0
+}
+
+.divider {
+    width: 5px;
+    min-width: 5px;
+    background: var(--md-outline);
+    cursor: col-resize;
+    flex-shrink: 0;
+    transition: background .12s;
+    position: relative
+}
+
+.divider.dragging,
+.divider:hover {
+    background: var(--md-primary)
+}
+
+.divider::after {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 40px;
+    background: var(--md-outline-strong);
+    border-radius: 2px;
+    opacity: .5
+}
+
+.layer-pane {
+    width: 280px;
+    min-width: 180px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    background: var(--md-surface-1);
+    border-left: 1px solid var(--md-outline);
+    overflow: hidden
+}
+
+.layer-divider {
+    height: 5px;
+    min-height: 5px;
+    background: var(--md-outline);
+    cursor: row-resize;
+    flex-shrink: 0;
+    position: relative;
+    transition: background .12s
+}
+
+.layer-divider.dragging,
+.layer-divider:hover {
+    background: var(--md-primary)
+}
+
+.layer-divider::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: var(--md-outline-strong);
+    border-radius: 2px;
+    opacity: .5
+}
