@@ -1,5 +1,5 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.0",
     "date": "2025-04-24",
     "changelog": "- Test Secure Updater\n- Fixed update flow\n- SHA256 verification",
     "active": true,
