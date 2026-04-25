@@ -3,8 +3,8 @@
     "minVersion": "1.0.0",
     "forceUpdate": true,
     "active": true,
-    "killMessage": "⚠️ Phát hành.\n",
-    "changelog": "- Added version locking\n- Secure updater",
+    "killMessage": "⚠️ Phiên bản 1.0.0 đã ngừng hỗ trợ. Vui lòng cập nhật lên 1.0.1 để tiếp tục sử dụng.",
+    "changelog": "- Phát hành\n",
     "download_url": "https://github.com/theka48/Fexport/releases/download/v1.0.1/FExport.exe",
     "sha256": "f79516e220f9e013635ba36246e85581d71049a3835bb40347facec7f752fd3c"
 }
