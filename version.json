@@ -6,5 +6,5 @@
     "killMessage": "⚠️ Phiên bản 1.0.0 đã ngừng hỗ trợ. Vui lòng cập nhật lên 1.0.1 để tiếp tục sử dụng.",
     "changelog": "- Fix lỗi không nhận layer chứa space tiếng Nhật\n",
     "download_url": "https://github.com/theka48/Fexport/releases/download/v1.0.1/FExport.exe",
-    "sha256": "ce327f89a6c8216e82a1687793d8c1232438587e457632af75cf75e0975f4eb7"
+    "sha256": "4aadd8dbb3ec3f9ef496728122d1414e77ee0ca8851ea82815ecf38b9f4e6fda"
 }
