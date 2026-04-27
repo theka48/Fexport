@@ -1,10 +1,11 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "minVersion": "1.0.1",
     "forceUpdate": true,
     "active": true,
-    "killMessage": "⚠️ Phiên bản 1.0.0 đã ngừng hỗ trợ. Vui lòng cập nhật lên 1.0.1 để tiếp tục sử dụng.",
-    "changelog": "- Fix lỗi không nhận layer chứa space tiếng Nhật\n",
-    "download_url": "https://github.com/theka48/Fexport/releases/download/v1.0.1/FExport.exe",
-    "sha256": "4aadd8dbb3ec3f9ef496728122d1414e77ee0ca8851ea82815ecf38b9f4e6fda"
+    "killMessage": "Phiên bản hiện tại đã ngừng hỗ trợ. Vui lòng cập nhật lên 1.0.2 để tiếp tục sử dụng.",
+    "changelog": "Fix: Lỗi tự xóa sapce tiếng Nhật trên các Formula\nFix: List danh sách hiển thị sai bản 00_Dor_下版_XuLyDuLieu.js\nFix: Tự động xóa kí tự space tiếng Nhật 03_Dor_下版_Export_csv_pdf.js\nFix: Copy dữ liệu xuất sang tab3 thiếu cột layer được bật 03_Dor_下版_Export_csv_pdf.js\nFix: Tự động xóa kí tự space tiếng Nhật 04_Dor_下版_Export_csv_BOP_pdf.js
+",
+    "download_url": "https://github.com/theka48/Fexport/releases/download/v1.0.2/FExport.exe",
+    "sha256": "c71d4c7b46634436e4af95d0ebf6aea29095a5fd4ad12ab05999db465225ca0c"
 }
