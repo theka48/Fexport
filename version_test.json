@@ -1,0 +1,10 @@
+{
+    "version": "1.0.4",
+    "minVersion": "1.0.3",
+    "forceUpdate": true,
+    "active": true,
+    "killMessage": "Phiên bản hiện tại đã ngừng hỗ trợ. Vui lòng cập nhật lên 1.0.4 để tiếp tục sử dụng.",
+    "changelog": "- Fix: Chỉ nhận 1 cấu trúc hình ảnh\n- Fix: Chỉ nhận 1 cấu trúc text\n- Fix: nhận sai csv, đã sửa theo chuẩn RFC 4180\n- Fix: tắt phần mềm và export PDF thì tắt preview\n- Add: Always On Top\n- Add: Cập nhật Rule\n- Add: Hỗ trợ ZagZag\n",
+    "download_url": "https://github.com/theka48/Fexport/releases/download/v1.0.3/FExport.exe",
+    "sha256": "375d236eb26473b8c057d303a8d3873c7f7a7cde2393c9426a6a0608ba036c37"
+}
