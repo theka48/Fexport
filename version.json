@@ -1,6 +1,6 @@
 {
     "version": "1.0.6",
-    "minVersion": "1.0.5",
+    "minVersion": "1.0.6",
     "forceUpdate": true,
     "active": true,
     "killMessage": "Phiên bản hiện tại đã ngừng hỗ trợ. Vui lòng cập nhật lên 1.0.6 để tiếp tục sử dụng.",
